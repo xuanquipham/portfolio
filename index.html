@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio XuanQui PHAM</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Mobile burger button (visible < 900px) -->
+  <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+
+  <!-- Mobile slide-in menu -->
+  <nav class="mobile-menu" aria-hidden="true" role="navigation">
+    <ul>
+      <li data-page="street">Street</li>
+      <li data-page="portrait">Portraits</li>
+      <li data-page="concert">Concert</li>
+      <li data-page="zine">Zine</li>
+      <li class="lang-toggle-mobile">FR / EN</li>
+      <li class="theme-toggle-mobile">Thème</li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <nav class="sidebar" role="navigation" aria-label="Menu principal">
+      <h1 id="site-title">Portfolio XuanQui PHAM</h1>
+      <ul>
+        <li class="active" data-page="street">Street</li>
+        <li data-page="portrait">Portraits</li>
+        <li data-page="concert">Concert</li>
+        <li data-page="zine">Zine</li>
+      </ul>
+
+      <div class="about-me">
+        <h2>À propos</h2>
+        <p>Photographe passionné basé à Paris.</p>
+        <p>Contact: <a href="mailto:xuanqui.phm@gmail.com">xuanqui.phm@gmail.com</a></p>
+        <p>Instagram: <a href="https://instagram.com/xuxu.photo" target="_blank" rel="noopener noreferrer">@xuxu.photo</a></p>
+      </div>
+
+      <div class="sidebar-buttons">
+        <button id="toggle-lang" aria-label="Changer la langue">🇫🇷 / 🇬🇧</button>
+        <button id="toggle-theme" aria-label="Changer le thème">☾</button>
+      </div>
+    </nav>
+
+    <main class="gallery" id="gallery" role="main" aria-live="polite"></main>
+  </div>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+    <img id="lightbox-img" src="" alt="" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
